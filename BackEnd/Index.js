@@ -92,14 +92,14 @@ app.post('/depoimento', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'teosavitebr@gmail.com',
-        pass: 'yrny lkqq wlbm ffve'
+        user: 'projetodeextensaogrupo6@gmail.com',
+        pass: 'komo nltv rfme huho'
       }
     });
 
     await transporter.sendMail({
       from: `"${nome}" <${email}>`,
-      to: 'teosavitebr@gmail.com',
+      to: 'teosavitebr@gmail.com',  //COLOCAR O EMAIL DO DONO DO SITE
       subject: 'Novo Depoimento Recebido',
       text: `Nome: ${nome}\nEmail: ${email}\nEstrelas: ${estrelas}\n\nMensagem:\n${mensagem}`
     });
@@ -132,8 +132,8 @@ app.post('/contato', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'teosavitebr@gmail.com', // site owner's email
-        pass: 'yrny lkqq wlbm ffve'    // app password
+        user: 'projetodeextensaogrupo6@gmail.com', // site owner's email
+        pass: 'komo nltv rfme huho'    // app password
       }
     });
 
